@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>disconnect.png</file>
+        <file>settings.png</file>
+        <file>application-exit.png</file>
+        <file>connect.png</file>
+        <file>ok.png</file>
+        <file>notok.png</file>
+        <file>krutelyator.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Vertolet</class>
+ <widget class="QMainWindow" name="Vertolet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>305</width>
+    <height>171</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>305</width>
+    <height>171</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>10</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Крутелятор</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="master.qrc">
+    <normaloff>:/krutelyator.ico</normaloff>:/krutelyator.ico</iconset>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::VerticalTabs</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMaximumSize</enum>
+    </property>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="FOROFF">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Вперед ВЫКЛ.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="REVOFF">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Реверс ВЫКЛ.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="REV">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Реверс ВКЛ.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="SON">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Мотор ВКЛ.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="FOR">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Вперед ВКЛ.</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="SOFF">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Мотор ВЫКЛ.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="text">
+           <string>Изм. скорости</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>6</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>От 100 до 5000 об./мин.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0">
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>7</number>
+        </property>
+        <property name="bottomMargin">
+         <number>7</number>
+        </property>
+        <item>
+         <widget class="QSpinBox" name="speed">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>5000</number>
+          </property>
+          <property name="singleStep">
+           <number>100</number>
+          </property>
+          <property name="stepType">
+           <enum>QAbstractSpinBox::DefaultStepType</enum>
+          </property>
+          <property name="value">
+           <number>1500</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="speedChange">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>305</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <widget class="QMenu" name="connect">
+    <property name="font">
+     <font>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="title">
+     <string>Соединение</string>
+    </property>
+    <addaction name="actionCon"/>
+    <addaction name="actionDisc"/>
+   </widget>
+   <widget class="QMenu" name="settings">
+    <property name="font">
+     <font>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="actionSetcom"/>
+    <addaction name="actionAutoconnect"/>
+   </widget>
+   <addaction name="connect"/>
+   <addaction name="settings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </widget>
+  <action name="actionCon">
+   <property name="icon">
+    <iconset resource="master.qrc">
+     <normaloff>:/connect.png</normaloff>:/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Соединиться</string>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+  </action>
+  <action name="actionDisc">
+   <property name="icon">
+    <iconset resource="master.qrc">
+     <normaloff>:/disconnect.png</normaloff>:/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Разъединиться</string>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+  </action>
+  <action name="actionSetcom">
+   <property name="icon">
+    <iconset resource="master.qrc">
+     <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки modbus</string>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+  </action>
+  <action name="actionAutoconnect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="master.qrc">
+     <normaloff>:/notok.png</normaloff>
+     <normalon>:/ok.png</normalon>
+     <disabledoff>:/notok.png</disabledoff>
+     <disabledon>:/notok.png</disabledon>
+     <activeoff>:/notok.png</activeoff>
+     <activeon>:/ok.png</activeon>
+     <selectedoff>:/notok.png</selectedoff>
+     <selectedon>:/ok.png</selectedon>:/notok.png</iconset>
+   </property>
+   <property name="text">
+    <string>Автоподключение</string>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="master.qrc"/>
+ </resources>
+ <connections/>
+</ui>
